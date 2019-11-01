@@ -19,8 +19,8 @@ app.use(express.urlencoded({extended: false}));
 app.use(morgan('dev'));
 
 //Routes
-app.use('/signin', require('./routes/signin'));
 app.use('/signup', require('./routes/signup'));
-app.use('/inicio', require('./routes/landing'));
+app.use('/login', require('./routes/login'));
+app.use('/home', require('./routes/landing'));
 
 module.exports = app;

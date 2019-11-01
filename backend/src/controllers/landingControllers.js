@@ -1,7 +1,9 @@
 const landingCtrl = {};
+const User = require('../models/Signup');
 
-landingCtrl.landiing = (req, res) => {
-    res.send('Página principal')
+landingCtrl.landing =   (req, res) => {
+    
+    res.json({message: 'works'})
 }
 
 module.exports = landingCtrl;

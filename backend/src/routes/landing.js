@@ -1,10 +1,13 @@
 const { Router } = require('express');
 const router = Router();
+const verifyToken = require('../middlewares/verifyToken');
 
-const { landiing } = require('../controllers/landingControllers')
+
+const { landing } = require('../controllers/landingControllers')
 
 router.route('/')
-    .get(landiing)
+
+    .get(landing)
 
 
 module.exports = router;

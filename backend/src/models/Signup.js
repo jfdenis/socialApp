@@ -1,0 +1,33 @@
+const { Schema, model } = require('mongoose');
+const bcrypt = require('bcryptjs');
+const signupSchema = new Schema ({
+    name: {
+        type: String,
+        required: true
+    },
+    last_name: {
+        type: String,
+        required: true
+    },
+    email: {
+        type: String,
+        required: true,
+        unique: true
+    },
+    password: {
+        type: String,
+        required: true
+    }
+
+});
+ // Encriación de la contraseña
+signupSchema.methods.myencrypt = async (password) => {
+    const salt = await bcrypt.genSalt(10);
+    return bcrypt.hash(password, salt);
+};
+
+
+signupSchema.methods.validatepassword = function(password){
+    bcrypt.compare(password, this.password);
+};
+module.exports = model('users', signupSchema);

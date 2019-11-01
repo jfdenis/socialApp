@@ -1,10 +1,10 @@
 const { Router } = require('express');
 const router = Router();
 
-const { signin } = require('../controllers/signinControllers');
+const { signup } = require('../controllers/loginControllers');
 
 router.route('/')
-    .post(signin)
+    .post(signup)
 
 
 
