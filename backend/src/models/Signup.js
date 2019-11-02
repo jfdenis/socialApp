@@ -20,7 +20,7 @@ const signupSchema = new Schema ({
     }
 
 });
- // Encriación de la contraseña
+ // Encriptación de la contraseña
 signupSchema.methods.myencrypt = async (password) => {
     const salt = await bcrypt.genSalt(10);
     return bcrypt.hash(password, salt);
