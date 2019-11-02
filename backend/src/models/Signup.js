@@ -17,6 +17,9 @@ const signupSchema = new Schema ({
     password: {
         type: String,
         required: true
+    },
+    imgPath: {
+        type: String
     }
 
 });
