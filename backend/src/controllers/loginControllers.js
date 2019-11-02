@@ -9,14 +9,14 @@ signUpCtrl.signup = async (req, res) => {
     console.log(email, password);
     const user = await User.findOne({email:email})
     if(!user) {
-        res.status(404).send("User doesn't exists")
+       return res.status(404).send("User doesn't exists")
     }
 
     const validPassword = await user.validatepassword(password)
     console.log(validPassword)
 
     if(!validPassword) {
-        res.status(401).json({auth: false, token: null });
+        return res.status(401).json({auth: false, token: null });
     }
     const token = await jwt.sign({id:user.id}, SECRET_KEY, {
         expiresIn: 60 * 60 * 24
