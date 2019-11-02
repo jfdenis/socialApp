@@ -26,8 +26,11 @@ signupSchema.methods.myencrypt = async (password) => {
     return bcrypt.hash(password, salt);
 };
 
-
+// Comparando la contraseña de la db con la que se recibe del cliente
 signupSchema.methods.validatepassword = function(password){
-    bcrypt.compare(password, this.password);
+    return bcrypt.compare(password, this.password);
 };
+
+
+
 module.exports = model('users', signupSchema);
