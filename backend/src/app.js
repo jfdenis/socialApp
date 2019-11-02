@@ -21,6 +21,6 @@ app.use(morgan('dev'));
 //Routes
 app.use('/signup', require('./routes/signup'));
 app.use('/login', require('./routes/login'));
-app.use('/home', require('./routes/landing'));
+app.use('/home', require('./routes/home'));
 
 module.exports = app;

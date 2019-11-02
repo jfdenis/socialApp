@@ -7,7 +7,7 @@ const SECRET_KEY = process.env.SECRET_KEY
 
 
 
-landingCtrl.landing = verifyToken, async (req, res, next) => {
+const landing = async (req, res, next) => {
     // Datos del token en el middleware verifyToken
     const user = await User.findById(req.userId, {password: 0});
     if(!user) {
@@ -16,4 +16,4 @@ landingCtrl.landing = verifyToken, async (req, res, next) => {
     res.json(user)
 }
 
-module.exports = landingCtrl;
+module.exports = landing

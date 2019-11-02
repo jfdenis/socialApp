@@ -3,8 +3,8 @@ const router = Router();
 const verifyToken = require('../middlewares/verifyToken');
 
 
-const { landing } = require('../controllers/landingControllers')
+const landing  = require('../controllers/homeControllers')
 
-router.get('/', landing)
+router.get('/', verifyToken, landing)
 
 module.exports = router;
