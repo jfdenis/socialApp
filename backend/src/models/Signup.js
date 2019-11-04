@@ -1,3 +1,13 @@
+/*
+Here we can edit the user schema, where indicates how the client has tu send 
+the information to be saved in the database.
+
+Here also configure the Bcrypt module in order to set our password in rare strings
+and then compare the password of the clien and the password that we already have in
+order to compare them.
+
+*/
+
 const { Schema, model } = require('mongoose');
 const bcrypt = require('bcryptjs');
 const signupSchema = new Schema ({

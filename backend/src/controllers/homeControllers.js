@@ -1,3 +1,9 @@
+/*
+Here we can edit the function of home route, where indicates what is in the page and what it does
+
+We need to require the JWT becouse this page has to be block
+
+*/
 require('dotenv').config();
 const landingCtrl = {};
 const jwt = require('jsonwebtoken');

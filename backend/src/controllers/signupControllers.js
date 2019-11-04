@@ -1,3 +1,10 @@
+/*
+In the Signin we add new users and to encrypt
+the password we need configure the module in the
+models then we add here
+
+*/
+
 // Controllers Settings Signin
 require('dotenv').config();
 const signCtrl = {};

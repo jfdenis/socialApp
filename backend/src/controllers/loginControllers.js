@@ -1,3 +1,12 @@
+
+/*
+Here we can edit the function of login route, where indicates what is in the page and what it does
+
+The JWT module is required, so that the tokens work well
+
+
+*/
+
 require('dotenv').config();
 const signUpCtrl = {};
 const User = require('../models/Signup');

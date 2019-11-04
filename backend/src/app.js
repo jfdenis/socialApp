@@ -1,3 +1,9 @@
+/*
+Here is the server settings, you can edit this if you want, 
+also you can add more middlewares this page is exported
+becouse another file starts the server.
+*/
+
 // Server settings
 const express = require('express');
 const morgan = require('morgan');

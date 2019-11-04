@@ -1,3 +1,8 @@
+/*
+
+Here is the settings of the main page
+
+*/
 startCtrl = {}
 
 startCtrl.inicio = (req, res) => {
