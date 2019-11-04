@@ -9,7 +9,7 @@ import Start from './components/start';
 import Home from './components/home';
 import Login from './components/login';
 import Signup from './components/signup';
-
+import Footer from './components/footer';
 function App() {
   return (
     
@@ -22,7 +22,7 @@ function App() {
         <Route path="/login" component={Login} />
         <Route path="/signup" component={Signup} />
       </div>
-      
+      <Footer/>
     </Router>
   );
 }
