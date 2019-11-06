@@ -14,6 +14,7 @@ const SECRET_KEY = process.env.SECRET_KEY;
 
 signCtrl.signup = async (req, res) => {
     const { name, last_name, username, email, password } = req.body;
+    console.log(req.body)
     const user =  new User ({ name, last_name, username, email, password });
     user.password = await user.myencrypt(user.password);
 
