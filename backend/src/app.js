@@ -29,6 +29,8 @@ app.use('/', require('./routes/start'));
 app.use('/signup', require('./routes/signup'));
 app.use('/login', require('./routes/login'));
 app.use('/home', require('./routes/home'));
+app.use('/api/posts', require('./routes/posts'));
+app.use('/api/users',  require('./routes/users'));
 app.use('/new-post', require('./routes/newPost'));
 
 module.exports = app;

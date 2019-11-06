@@ -1,11 +1,10 @@
 import React, { Component } from 'react'
-
+import Register from './register';
 export default class signup extends Component {
     render() {
         return (
-            <div>
-                Signup
-            </div>
+            <Register className="justify-content-center"/>
+            
         )
     }
 }
