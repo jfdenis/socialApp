@@ -27,4 +27,4 @@ Luego en la misma consola ejecuta `npm install` el cual instalará las dependenc
 El backend iniciará en `localhost:4000` y el frontend en `localhost:3000`
 
 #### Enjoy
-:wink: :wink: :wink: :wink:
+:wink: :wink: :wink: :wink: :wink:
