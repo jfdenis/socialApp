@@ -15,6 +15,7 @@ export default class register extends Component {
         console.log(res);
     }
     onSubmit = async (e) => {
+        e.preventDefault();
         const newUser = {
             name: this.state.name,
             last_name: this.state.last_name,
@@ -22,7 +23,7 @@ export default class register extends Component {
             password: this.state.password
         }
         
-
+        window.location.href = '/login';
         await axios.post('http://localhost:4000/signup', newUser)
     }
     onInputChange = (e) => {
@@ -35,11 +36,7 @@ export default class register extends Component {
     render() {
         return (
             <div> 
-                <div className="container p-4">
-                    <p><h2 className="display-3">Welcome to SocialApp, i'd like to know who you are...</h2>
-                        <h3>If you are new sign up below!</h3>
-                    </p>
-                </div>
+                
                 <div className="conatiner mx-auto float-block">
                     <div className="row pt-4 justify-content-center">
                         <div className="col-md-7">
