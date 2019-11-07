@@ -5,7 +5,7 @@ export default class footer extends Component {
     render() {
         return (
             
-            <footer className="page-footer font-small bg-info pt-4 border  rounded-top fixed-bottom">
+            <footer className="page-footer font-small ">
 
                 <div className="container">
                     <ul className="list-unstyled list-inline text-center py-2">
