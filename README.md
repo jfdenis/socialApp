@@ -21,10 +21,11 @@ git clone `https://github.com/CinderyCape27/socialApp.git`
 Luego en la misma consola ejecuta `npm install` el cual instalará las dependencias
 
 ### Iniciar app
-1. En backend ejecuta `npm start`
-2. En frontend ejectuta `npm start`
+1. En /backend ejecuta `npm start`
+2. En /frontend ejectuta `npm start`
 
 El backend iniciará en `localhost:4000` y el frontend en `localhost:3000`
+---
 
 #### Enjoy
 :wink: :wink: :wink: :wink: :wink:
